@@ -1,0 +1,18 @@
+﻿<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="CreateDM">Add</h3>
+</div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+   
+    <div class="modal-body">
+        <div class="control-group">
+            <label for="Description">Title : </label>
+        </div>
+        ... some div class like the last one
+    </div>
+    <div class="modal-footer">... </div>
+}
